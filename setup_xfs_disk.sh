@@ -55,7 +55,7 @@ echo -e "${YELLOW}--- Starting XFS Partition Setup for $DEVICE ---${NC}"
 # 3. Safety Check: Warn about data loss
 echo -e "${RED}WARNING: This will create a new GPT label on $DEVICE.${NC}"
 echo -e "${RED}ALL DATA on $DEVICE will be LOST.${NC}"
-read -p "Are you sure you want to proceed? (y/n): " confirm
+read -p "Are you sure you want to proceed? (y/n): " confirm < /dev/tty
 if [[ "$confirm" != "y" ]]; then
     echo "Operation aborted."
     exit 0

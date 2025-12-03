@@ -5,5 +5,5 @@ curl -sSL https://raw.githubusercontent.com/cuongnbms/util-scripts/refs/heads/ma
 
 # Setup xfs disk
 ```
-curl -sSL https://raw.githubusercontent.com/cuongnbms/util-scripts/refs/heads/main/setup_xfs_disk.sh | bash -s -- /dev/sdc /mnt/data --no-fstab
+curl -sSL https://raw.githubusercontent.com/cuongnbms/util-scripts/refs/heads/main/setup_xfs_disk.sh | sudo bash -s -- /dev/sdc /mnt/data --no-fstab
 ```
